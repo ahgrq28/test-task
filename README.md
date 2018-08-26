@@ -17,3 +17,6 @@ Build and Run
 	```
 
 2. Open `http://localhost:8080` in a web browser.
+
+**Сделанный проект**
+--------------------
