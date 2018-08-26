@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;valo&quot;}">
+  <meta name="vaadin-version" content="7.7.7">
+ </head>
+ <body>
+  <vaadin-vertical-layout width="700px" height="400px">
+   <vaadin-vertical-layout spacing size-full margin :expand>
+    <vaadin-horizontal-layout width-full :middle :center>
+     <vaadin-label width-auto height="23px" plain-text _id="labelName" :middle :center>
+       Название 
+     </vaadin-label>
+     <vaadin-text-field width-full _id="name" :expand></vaadin-text-field>
+    </vaadin-horizontal-layout>
+    <vaadin-horizontal-layout width-full :middle :center>
+     <vaadin-label size-auto plain-text :middle>
+       Жанр 
+     </vaadin-label>
+     <vaadin-combo-box item-caption-mode="property" width-full _id="generSelect" :expand></vaadin-combo-box>
+    </vaadin-horizontal-layout>
+    <vaadin-horizontal-layout width-full :middle :center>
+     <vaadin-label size-auto plain-text :middle>
+       Автор 
+     </vaadin-label>
+     <vaadin-combo-box item-caption-mode="id_tostring" width-full _id="authorSelect" :expand>
+      <option>Option 1</option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+     </vaadin-combo-box>
+    </vaadin-horizontal-layout>
+    <vaadin-horizontal-layout width-full :middle :center>
+     <vaadin-label size-auto plain-text _id="labelSurname" :middle>
+       Издатель 
+     </vaadin-label>
+     <vaadin-combo-box popup-width="" item-caption-mode="property" width-full _id="publisherSelect" :expand>
+      <option item-id="Option 1"></option>
+      <option item-id="Option 2"></option>
+      <option item-id="Option 3"></option>
+     </vaadin-combo-box>
+    </vaadin-horizontal-layout>
+    <vaadin-horizontal-layout width-full :middle :center>
+     <vaadin-label width-auto height="23px" plain-text _id="labelMiddleName" :middle :center>
+       Год 
+     </vaadin-label>
+     <vaadin-text-field width-full _id="year" :expand></vaadin-text-field>
+    </vaadin-horizontal-layout>
+    <vaadin-horizontal-layout width-full :middle :center>
+     <vaadin-label width-auto height="23px" plain-text _id="labelMiddleName1" :middle :center>
+       Город 
+     </vaadin-label>
+     <vaadin-text-field width-full _id="city" :expand></vaadin-text-field>
+    </vaadin-horizontal-layout>
+    <vaadin-horizontal-layout spacing :middle :right>
+     <vaadin-button plain-text _id="save" :middle :center>
+       Ок 
+     </vaadin-button>
+     <vaadin-button plain-text _id="abolish">
+       Отменить 
+     </vaadin-button>
+    </vaadin-horizontal-layout>
+   </vaadin-vertical-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>

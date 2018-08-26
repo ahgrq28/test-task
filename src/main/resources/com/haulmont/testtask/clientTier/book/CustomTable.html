@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;valo&quot;}">
+  <meta name="vaadin-version" content="7.7.7">
+ </head>
+ <body>
+  <vaadin-vertical-layout size-full>
+   <vaadin-horizontal-layout spacing :middle :center>
+    <vaadin-button plain-text _id="adding">
+      Добавить 
+    </vaadin-button>
+    <vaadin-button enabled="false" plain-text _id="deletRow">
+      Удалить 
+    </vaadin-button>
+    <vaadin-button enabled="false" plain-text _id="edit">
+      Изменить 
+    </vaadin-button>
+    <vaadin-button icon="fonticon://FontAwesome/f0e2" plain-text _id="update"></vaadin-button>
+    <vaadin-label width="100px" plain-text></vaadin-label>
+    <vaadin-label size-auto plain-text :middle :center>
+      Поиск: 
+    </vaadin-label>
+    <vaadin-combo-box _id="serchComboBox">
+     <option>Название</option>
+     <option>Автор</option>
+     <option>Издатель</option>
+    </vaadin-combo-box>
+    <vaadin-text-field _id="serchEdit"></vaadin-text-field>
+    <vaadin-button icon="fonticon://FontAwesome/f002" plain-text _id="serchBtn"></vaadin-button>
+   </vaadin-horizontal-layout>
+   <vaadin-horizontal-layout width-full></vaadin-horizontal-layout>
+   <vaadin-grid size-full _id="table" :expand></vaadin-grid>
+  </vaadin-vertical-layout>
+ </body>
+</html>
